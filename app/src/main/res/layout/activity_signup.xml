@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/activity_signup_button_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/activity_signup_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orientalBlue"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:text="Safe-Driving"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/activity_signup_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/activity_signup_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:adjustViewBounds="true"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_text_title"
+            app:layout_constraintBottom_toTopOf="@id/activity_signup_tv1" />
+
+
+        <TextView
+            android:id="@+id/activity_signup_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="회원가입"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="300dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/activity_singup_username" />
+
+
+        <EditText
+            app:layout_constraintVertical_chainStyle="packed"
+            android:id="@+id/activity_singup_username"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="아이디"
+            android:layout_marginHorizontal="20dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/button_round"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/activity_signup_password"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_tv1" />
+
+
+        <EditText
+            android:id="@+id/activity_signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="비밀번호"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/button_round"
+            app:layout_constraintTop_toBottomOf="@id/activity_singup_username"
+            app:layout_constraintBottom_toTopOf="@id/activity_signup_button_signup" />
+
+        <Button
+            android:id="@+id/activity_signup_button_signup"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/button_round"
+            android:text="회원가입"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_password"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/activity_signup_button_upload" />
+
+        <Button
+            android:id="@+id/activity_signup_button_upload"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/button_round"
+            android:text="사진 업로드"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_button_signup"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/activity_signup_button_gallery"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <Button
+            android:id="@+id/activity_signup_button_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/button_round"
+            android:text="사진 고르기"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_button_upload"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
