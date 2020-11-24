@@ -12,11 +12,9 @@ object Api {
     var builder = Retrofit.Builder()
     var authToken = ""
     lateinit var auth: AuthService
-
-
     fun update(
-//        baseUrl: String = "http://bomnae1971.site:8090/",
-            baseUrl: String = "http://14.32.217.141:8080",
+            baseUrl: String = "http://bomnae1971.site:8090/",
+//            baseUrl: String = "http://14.32.217.141:8080",
             authToken: String = ""
     ) {
         val gson = GsonBuilder().setLenient().create()

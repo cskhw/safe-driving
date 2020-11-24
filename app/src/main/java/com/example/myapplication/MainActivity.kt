@@ -52,8 +52,13 @@ class MainActivity : AppCompatActivity() {
                     override fun onResponse(call: Call<Boolean>, response: Response<Boolean>) {
                         println("response.code: ${response.code()}")
                         println("response.body: ${response.body()}")
-                        if (response.body() == true) println("인식 성공")
-                        else println("인식 실패")
+                        if (response.body() == true) {
+                            println("인식 성공")
+                            Api.update(baseUrl = Env.raspUrl)
+                            Api.
+
+
+                        } else println("인식 실패")
                     }
 
                     override fun onFailure(call: Call<Boolean>, t: Throwable) {
