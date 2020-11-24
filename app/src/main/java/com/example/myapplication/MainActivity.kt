@@ -54,9 +54,6 @@ class MainActivity : AppCompatActivity() {
                         println("response.body: ${response.body()}")
                         if (response.body() == true) {
                             println("인식 성공")
-                            Api.update(baseUrl = Env.raspUrl)
-                            Api.
-
 
                         } else println("인식 실패")
                     }
